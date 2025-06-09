@@ -1,0 +1,5 @@
+#CODEOWNERS
+
+*				@azdew
+/classification/nhan/		@Nguyennhan2312
+/linear_regression/khang/	@Khang210105
