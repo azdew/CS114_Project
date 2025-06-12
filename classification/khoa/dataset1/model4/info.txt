@@ -1,0 +1,1 @@
+Kích thước ảnh là 64*64, sử dụng model CNN với tối đa 128 filter và 3 lớp fc

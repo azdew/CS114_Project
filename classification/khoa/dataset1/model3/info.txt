@@ -1,0 +1,1 @@
+giảm kích thước ảnh còn 32*32, bỏ bớt một lớp so với model 1

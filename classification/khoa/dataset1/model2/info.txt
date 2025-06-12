@@ -1,0 +1,1 @@
+Tăng kích thước ảnh lên 128*128, giữ nguyên model1
