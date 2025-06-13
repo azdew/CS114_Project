@@ -1,0 +1,1 @@
+Sử dụng SGD với momentum 0.9 và lr_scheduler thay vì ADAM, kích thước ảnh là 32*32, giống model4

@@ -1,0 +1,1 @@
+Giảm kích thước ảnh còn 32*32, giữ nguyên model4

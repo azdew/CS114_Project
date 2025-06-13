@@ -1,0 +1,1 @@
+Giống model7, tăng kích thước ảnh lên 64*64

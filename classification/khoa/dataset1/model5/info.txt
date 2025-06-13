@@ -1,0 +1,1 @@
+Tăng độ phân giải ảnh lên 128*128, giữ nguyên model4
