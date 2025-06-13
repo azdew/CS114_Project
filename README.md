@@ -44,7 +44,7 @@
 - Model nào liên quan tới dataset nào thì nằm trong thư mục `datasetpth` đó (cách đặt tên tương tự như đặt tên cho dataset)
 - File `info.txt` trong thư mục `dataset` và `model` chính là file để ghi thông tin về dataset hoặc model đó (ví dụ model này thay đổi learning_rate = 1e^-3, model kia đổi kích thước ảnh thành x*x,...)
 - Vậy thư mục `model` gồm 5 file:
-  - `info.txt`: như đã nói ở trêntrên    
+  - `info.txt`: như đã nói ở trên
   - `result.csv`: là file kết quả đã nộp lên wecode
   - `score.txt`: là file lưu lại điểm số tương ứng với file `results.csv` đã nộp
   - `best_model.pth`: là file tham số model tốt nhất được lưu từ hàm torch.save(...)
