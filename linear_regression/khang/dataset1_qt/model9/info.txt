@@ -1,0 +1,34 @@
+Thông tin về model
+
+Model: XGBoost (scikit-learn)
+
+model = XGBRegressor(
+    n_estimators=100,
+    learning_rate=0.1,
+    max_depth=6,
+    random_state=42,
+    n_jobs=-1,
+    verbosity=0  # Không hiện log
+)
+
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_qt 
+
+param_grid = {
+    'n_estimators': [100, 200],
+    'max_depth': [4, 6, 8],
+    'learning_rate': [0.01, 0.05, 0.1],
+    'subsample': [0.8, 1.0],
+    'colsample_bytree': [0.8, 1.0],
+    'reg_alpha': [0, 0.1],     # L1 regularization
+    'reg_lambda': [1, 2]       # L2 regularization
+}
+
+grid_search = GridSearchCV(
+    estimator=xgb_model,
+    param_grid=param_grid,
+    cv=5,                    # số folds k-fold cross-validation
+    scoring='r2',
+    verbose=0,               # không hiện log ra
+    n_jobs=-1
+)

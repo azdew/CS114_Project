@@ -1,0 +1,31 @@
+Thông tin về model
+
+- Thực hiện loại bỏ 4 đặc trưng đã làm trước đó
+
+- Tìm siêu tham số cho mô hình RandomForestRegressor bằng RandomizedSearchCV
+
+Model: RandomForestRegressor (scikit-learn)
+Best parameters: {'n_estimators': 100, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'sqrt', 'max_depth': 10}
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_qt 
+
+param_dist = {
+    'n_estimators': [100, 200, 300, 500],              # Số cây trong rừng
+    'max_depth': [None, 10, 20, 30, 50, 70],           # Độ sâu của cây
+    'min_samples_split': [2, 5, 10, 15],               # Tối thiểu số mẫu để chia
+    'min_samples_leaf': [1, 2, 4, 8],                  # Tối thiểu số mẫu ở lá
+    'max_features': ['sqrt', 'log2', 0.5, None],       # Số đặc trưng tại mỗi lần split
+    'bootstrap': [True]                         # Có dùng bootstrap mẫu không
+}
+
+random_search = RandomizedSearchCV(
+    estimator=rf,
+    param_distributions=param_dist,
+    n_iter=300,        # Tăng số lượng tổ hợp thử nghiệm → cải thiện kết quả
+    cv=10,             # Dùng 10-fold cross-validation → đánh giá kỹ hơn
+    verbose=0,         
+    n_jobs=-1,         # Dùng toàn bộ CPU
+    scoring='r2',
+    random_state=42,
+    error_score='raise'  # Nếu có lỗi thì raise exception luôn, dễ debug
+)
