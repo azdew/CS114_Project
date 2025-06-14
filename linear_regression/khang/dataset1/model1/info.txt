@@ -1,1 +1,8 @@
 Thông tin về model
+
+Model: RandomForestRegressor (scikit-learn)
+Parameters:
+  - n_estimators=100
+  - random_state=42
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1
