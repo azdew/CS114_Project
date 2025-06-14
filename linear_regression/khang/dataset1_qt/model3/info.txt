@@ -1,0 +1,16 @@
+Thông tin về model
+
+Model: RandomForestRegressor (scikit-learn)
+Parameters:
+  - n_estimators=100
+  - random_state=42
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_qt 
+
+Thực hiện loại bỏ 4 đặc trưng sau:
+
+df_merged = df_merged.drop(columns=['avg_failed_ratio'])
+df_merged = df_merged.drop(columns=['avg_n_failed'])
+df_merged = df_merged.drop(columns=['n_lang_used'])
+df_merged = df_merged.drop(columns=['n_syntax_error'])
+df_merged = df_merged.drop(columns=['avg_late_coef'])
