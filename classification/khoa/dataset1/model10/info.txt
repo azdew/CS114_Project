@@ -1,0 +1,1 @@
+Kích thước ảnh là 64*64, giữ như model9 mà bỏ đi nn.dropout

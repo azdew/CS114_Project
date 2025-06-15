@@ -1,0 +1,15 @@
+Thông tin về model
+
+Model: XGBoost (scikit-learn)
+
+model = XGBRegressor(
+    n_estimators=100,
+    learning_rate=0.1,
+    max_depth=6,
+    random_state=42,
+    n_jobs=-1,
+    verbosity=0  # Không hiện log
+)
+
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_qt 

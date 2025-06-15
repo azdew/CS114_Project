@@ -1,0 +1,9 @@
+Thông tin về model
+
+Model: Linear Regression
+Parameters:
+  LinearRegression()
+  {'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}
+
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_qt

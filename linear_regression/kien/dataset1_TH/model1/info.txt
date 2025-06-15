@@ -1,0 +1,21 @@
+Mô hình sử dung : xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
+sử dụng GridSearchCV với tập hợp các tham số như sau:
+param_grid = {
+    'n_estimators': [50, 100, 150],
+    'max_depth': [3, 4, 5],
+    'learning_rate': [0.05, 0.1, 0.2],
+    'subsample': [0.6, 0.8, 1.0],
+    'colsample_bytree': [0.6, 0.8, 1.0]
+}
+
+Sau khi Grid Search kết thúc, mô hình tốt nhất (grid_search.best_estimator_) có các tham số:
+{
+    'colsample_bytree': 0.6,
+    'learning_rate': 0.1,
+    'max_depth': 4,
+    'n_estimators': 100,
+    'subsample': 0.6
+}
+
+file train : train.csv
+file kết quả : prediction_all_students.csv
