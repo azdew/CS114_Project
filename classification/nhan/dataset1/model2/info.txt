@@ -1,0 +1,6 @@
+Info model2
+Model: resnet18
+Giữ nguyên RGB
+Freeze toàn bộ các layer (trừ lớp cuối)
+optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.005, momentum=0.9)
+exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=10, gamma=0.1)
