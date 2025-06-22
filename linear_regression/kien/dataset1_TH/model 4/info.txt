@@ -1,0 +1,23 @@
+Sử dung mô model xgboost , thử các tham sồ bằng GridSearchCV
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [4, 6, 8],
+    'learning_rate': [0.05, 0.1, 0.2],
+    'subsample': [0.6, 0.8, 1.0],
+    'colsample_bytree': [0.6, 0.8, 1.0]
+}
+
+grid_search = GridSearchCV(
+    estimator=model,
+    param_grid=param_grid,
+    scoring='neg_mean_squared_error', # thay đổi từ r2 thành MSE
+    cv=5,
+    verbose=1,
+    n_jobs=-1
+)
+
+Best Parameters: {'colsample_bytree': 0.6, 'learning_rate': 0.05, 'max_depth': 4, 'n_estimators': 100, 'subsample': 0.8}
+Best Score (Negative MSE): -3.3901652331944296
+MSE trên tập test: {test_mse:.4f}
+
+Điểm thay đổi của Model : không xóa đi hai cột có đóng góp ít trong Model trước , thay đổi scoring='neg_mean_squared_error', thay đổi từ r2 thành MSE

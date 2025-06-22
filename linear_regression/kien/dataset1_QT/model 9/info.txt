@@ -1,0 +1,4 @@
+Sử dụng model LinearRegression 
+
+MSE trên tập test: 2.8791
+R² score = 0.0371

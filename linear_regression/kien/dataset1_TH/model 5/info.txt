@@ -1,0 +1,6 @@
+Sử dung model LinearRegression
+
+MSE: 4.3278
+R²:   0.0055
+
+
