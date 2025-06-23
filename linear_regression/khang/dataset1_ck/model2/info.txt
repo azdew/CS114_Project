@@ -1,0 +1,7 @@
+Thông tin về model
+
+Model: Cat Boost
+
+Lưu mô hình bằng: joblib.dump(model, 'best_model.pkl')
+Dataset: dataset1_ck
+
