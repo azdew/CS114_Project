@@ -1,2 +1,0 @@
-Model5: MobileNetV2 (huấn luyện toàn bộ các lớp)
-Score: 9441/9987

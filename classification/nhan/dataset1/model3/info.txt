@@ -1,3 +1,5 @@
-Model3: MobileNetV2 (không fine-tune)
-optimizer = optim.Adam(model.parameters(), lr=1e-3)
-scheduler = lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
+model3: MobileNetV2 (không fine-tune)
+Không RandomEqualize(p=0.5)
+Optimizer: Adam
+Score
+model4: 6068/9987
