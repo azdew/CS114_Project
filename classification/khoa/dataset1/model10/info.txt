@@ -1,1 +1,1 @@
-Kích thước ảnh là 64*64, giữ như model9 mà bỏ đi nn.dropout
+Kích thước ảnh là 64*64, Sử dụng SGD thay vì Adam, với gamma = 0.5 và lr khởi đầu = 10^-4, và giảm lr sau mỗi 20 epoch

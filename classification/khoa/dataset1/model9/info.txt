@@ -1,1 +1,1 @@
-Kích thước ảnh là 64*64, thêm nn.dropout, thêm dời và làm xéo ảnh
+Kích thước ảnh là 64*64, sử dụng SGD với momentum = 0.9 và gamma = 0.5 thay vì Adam (model7)

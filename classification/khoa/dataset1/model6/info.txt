@@ -1,1 +1,1 @@
-Giảm kích thước ảnh còn 32*32, giữ nguyên model4
+Kích thước ảnh là 64*64, thêm dời và làm xéo ảnh, dùng Adam và CNN

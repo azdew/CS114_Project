@@ -1,1 +1,1 @@
-Kích thước ảnh là 64*64, sử dụng model CNN với tối đa 128 filter và 3 lớp fc
+Kích thước ảnh là 64*64, CNN, sử dụng SGD với momentum và lr_scheduler với gamma = 0.2 và stepsize = 10

@@ -1,1 +1,1 @@
-Tăng độ phân giải ảnh lên 128*128, giữ nguyên model4
+Kích thước ảnh là 64*64, Model CNN với SGD momentum = 0.9 và lr_scheduler gamma = 0.5

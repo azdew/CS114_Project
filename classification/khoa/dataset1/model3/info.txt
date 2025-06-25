@@ -1,1 +1,1 @@
-giảm kích thước ảnh còn 32*32, bỏ bớt một lớp so với model 1
+Kích thước ảnh là 64*64, model CNN Adam với tối đa 128 filter

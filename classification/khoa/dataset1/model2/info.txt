@@ -1,1 +1,1 @@
-Tăng kích thước ảnh lên 128*128, giữ nguyên model1
+Kích thước ảnh là 64*64, thêm equalize
