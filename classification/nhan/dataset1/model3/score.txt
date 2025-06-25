@@ -1,2 +1,2 @@
-Model3
-Score: 5498/9987
+model3
+Score: 6650/9987

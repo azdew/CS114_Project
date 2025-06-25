@@ -1,0 +1,2 @@
+model4: MobileNetV2 (không fine-tune)
+Score: 6068/9987

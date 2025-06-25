@@ -1,0 +1,10 @@
+model4: MobileNetV2 (không fine-tune)
+Không RandomEqualize(p=0.5)
+Optimizer: Adam
+
+So sánh với model3: MobileNetV2 (không fine-tune)
+Điểm khác biệt: Thay đổi hàm transform, thay đổi hàm classifier
+
+So sánh kết quả:
+model4: 6068/9987
+model3:
