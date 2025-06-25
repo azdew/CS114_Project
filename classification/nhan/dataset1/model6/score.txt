@@ -1,3 +1,0 @@
-model6: MobileNetV2
-Optimizer: SGD + Momentum
-Score: 9410/9987 (94.2%)
